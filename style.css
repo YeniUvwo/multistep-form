@@ -1,0 +1,1027 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: hsl(217, 100%, 97%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 350px;
+    height: 385px;
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 220px 385px;
+    gap: 0.8em;
+    border-radius: 7px;
+    margin-left: -7px;
+}
+.sidebar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    gap: 0.5em;
+}
+.first-sidebar-content{
+    margin-top: 25px;
+}
+.sidebar-number p{
+    font-size: 0.6em;
+    font-weight: 700;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    padding: 3.5px 8px;
+    margin-bottom: 7.5px;
+}
+.sidebar-steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sidebar-steps p{
+    font-size: 0.55em;
+    color: hsl(229, 24%, 90%);
+    margin-bottom: 0px;
+}
+h1{
+    font-size: 0.7em;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+p.sidebar-number-style{
+    background-color: hsl(206, 94%, 87%);
+    border-color: hsl(213, 96%, 48%);
+    color: hsl(213, 96%, 18%);
+}
+.design-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+h2{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+.design p{
+    font-size: 0.7em;
+    color: hsl(231, 11%, 63%);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+}
+label{
+    font-size: 0.65em;
+    font-weight: 500;
+    color: hsl(213, 96%, 25%);
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+input{
+    all: unset;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 5px;
+    width: 305px;
+    height: 27px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: hsl(213, 96%, 25%);
+    font-size: 0.7em;
+    font-weight: 700;
+}
+input:hover{
+    cursor: pointer;
+    border-color: hsl(243, 100%, 42%);
+}
+input:focus{
+    border-color: hsl(243, 100%, 42%);
+}
+input:active{
+    cursor: auto;
+}
+::placeholder{
+    font-size: 1em;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 11.8em;
+}
+.email-address{
+    display: flex;
+    flex-direction: row;
+    gap: 9.3em;
+}
+.phone-number{
+    display: flex;
+    flex-direction: row;
+    gap: 9em;
+}
+span.error-message{
+    font-size: 0.63em;
+    font-weight: 700;
+    color: hsl(354, 84%, 57%);
+    margin-top: 5px;
+    display: none
+}
+.error-style{
+    border-color: hsl(354, 84%, 57%);
+}
+.plan-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 80px;
+    gap: 13.5em;
+}
+.design-two-monthly{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.select-plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+.monthly-plan{
+    width: 95px;
+    height: 110px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+.plan:hover{
+    border-color: hsl(213, 96%, 18%);
+}
+.plan.focus{
+    background-color: hsl(243, 100%, 98%);
+    border-color: hsl(213, 96%, 18%);
+}
+.plan img{
+    width: 30px;
+}
+h3{
+    font-size: 0.7em;
+    margin-top: 27px;
+    margin-bottom: 0px;
+    color: hsl(213, 96%, 18%);
+}
+.plan-details p{
+    font-size: 0.6em;
+}
+.plan-duration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 317px;
+    height: 30px;
+    background-color: hsl(243, 100%, 98%);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.plan-duration-yearly{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.plan-duration p{
+    margin-bottom: 0px;
+    font-size: 0.6em;
+    font-weight: 700;
+}
+.monthly p{
+    color: hsl(213, 96%, 18%);
+}
+.toggle-bar{
+    width: 25px;
+    height: 13px;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 10px;
+    position: relative;
+}
+.toggle-bar-inner{
+    width: 8.5px;
+    height: 8.5px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.plan-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 110px;
+    gap: 11em;
+}
+.other-btn{
+    font-size: 0.7em;
+    font-weight: 500;
+    height: 35px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 11%, 63%);
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.other-btn:hover{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+.btn{
+    font-size: 0.7em;
+    font-weight: 500;
+    width: 85px;
+    height: 35px;
+    background-color: hsl(213, 96%, 18%);
+    color:  hsl(217, 100%, 97%);
+}
+.btn:hover{
+    background-color: hsl(213, 96%, 28%);
+    color:  hsl(217, 100%, 97%);
+}
+.design-two-yearly{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.yearly-plan{
+    width: 95px;
+    height: 128px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.yearly-plan p{
+    margin-bottom: 1px;
+}
+.freebie p{
+    font-size: 0.55em;
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+}
+.design-three-monthly{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.addon-options{
+    margin-top: 27px;
+}
+.addon{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 5px;
+    width: 310px;
+    height: 55px;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 1em;
+    cursor: pointer;
+}
+.check-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid hsl(240, 1%, 70%);
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin: 3px 1px 0px 5px;
+    background-color: transparent;
+}
+.check-container input[type="checkbox"]:checked + .checkmark {
+    background-color: hsl(213, 96%, 50%);
+    border-color: hsl(213, 96%, 50%) ;
+}
+.checkmark:after{
+    content: '';
+    position: absolute;
+    display: none;
+}
+.check-container input[type="checkbox"]:checked + .checkmark:after{
+    display: block;
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 6.5px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+}
+.addontext-time{
+    display: flex;
+    flex-direction: row;
+    gap: 4.5em;
+}
+h4{
+    font-size: 0.8em;
+    font-weight: 800;
+    color: hsl(213, 96%, 28%);
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.addon-text{
+    font-size: 0.9em;
+}
+.online-service{
+    margin-left: 5px;
+}
+.larger-storage{
+    margin-left: 30px;
+}
+.addon-time p{
+    margin-bottom: 0px;
+    font-size: 0.65em;
+    margin-top: 10px;
+    color: hsl(243, 100%, 50%);
+}
+.planbutton-designthree{
+    height: 75px;
+}
+.design-three-monthly p{
+    margin-bottom: 0px;
+}
+.addon.focus{
+    background-color: hsl(243, 100%, 98%);
+    border-color: hsl(213, 96%, 18%);
+}
+.design-three-yearly{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.addon-options-yearly{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.design-four-monthly{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.arcade-cost{
+    background-color: hsl(243, 100%, 98%);
+    width: 310px;
+    height: 135px;
+    border-radius: 5px;
+    padding: 15px 15px 15px 18px;
+    cursor: pointer;
+}
+.total-cost{
+    display: flex;
+    flex-direction: row;
+    gap: 9.5em;
+}
+.arcade-option{
+    height: 40px;
+}
+h5{
+    font-size: 0.75em;
+    color: hsl(213, 96%, 28%);
+    margin-bottom: 0px;
+}
+a{
+    color: hsl(231, 11%, 63%);
+    font-size: 0.65em;
+    margin-top: -5px;
+}
+a:hover{
+    color: hsl(267, 100%, 42%);
+}
+.total-cost p{
+    margin-bottom: 10px;
+    font-size: 0.65em;
+}
+.cost-digit{
+    margin-left: 15px;
+}
+.cost-digit-a p{
+    margin-left: -2px;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+}
+.cost-digit-b{
+    margin-left: 20px;
+}
+.cost-digit-c{
+    margin-left: 18px;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.last-total-cost{
+    padding: 10px 18px;
+    margin-top: 5px;
+    margin-bottom: -25px;
+}
+.cost-digit-d p{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: hsl(243, 100%, 62%);
+    margin-left: -17px;
+}
+.finish-btn{
+    font-size: 0.7em;
+    font-weight: 500;
+    width: 80px;
+    height: 33px;
+    background-color: hsl(243, 100%, 62%);
+    border: 1px solid hsl(243, 100%, 62%);
+    color:  hsl(229, 24%, 97%);
+    border-radius: 5px;
+}
+.finish-btn:hover{
+    background-color: hsl(267, 100%, 82%);
+    border-color: hsl(267, 100%, 82%);
+    counter-reset: hsl(229, 24%, 97%);;
+}
+.design-four-yearly{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 650px;
+    height: 405px;
+    border-radius: 10px;
+}
+.total-cost-yr{
+    gap: 10.2em;
+}
+.cost-digit-yr{
+    margin-left: 10px;
+}
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 10px 0px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.thankyou-design{
+    display: none;
+    width: 650px;
+    height: 405px;
+}
+.thankyou-design img{
+    width: 55px;
+    margin-right: 40px;
+    margin-bottom: -15px;
+}
+.thankyou-design h2{
+    margin-right: 40px;
+}
+.thankyou-design p{
+    color: hsl(231, 11%, 63%);
+    font-size: 0.7em;
+    margin-top: 5px;
+    text-align: center;
+    padding: 0px 60px 0px 20px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .main{
+        flex-direction: column;
+        max-width: 375px;
+        height: 100%;
+        border-radius: 10px;
+        gap: 0;
+        background-color: hsl(217, 100%, 97%);
+    }
+    .sidebar{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        height: 180px;
+        background-image: url(assets/images/bg-sidebar-mobile.svg);
+        background-size: 375px 180px;
+        gap: 0.8em;
+        border-radius: 0px;
+        margin-left: -8px;
+        margin-top: 0px;
+    }
+    .sidebar-content{
+        margin-left: 0px;
+        gap: 0.5em;
+        margin-top: -50px;
+    }
+    .first-sidebar-content{
+        margin-top: -50px;
+    }
+    .sidebar-number p{
+        font-size: 0.8em;
+        padding: 5.5px 12px;
+        margin-bottom: 7.5px;
+    }
+    .sidebar-steps{
+        display: none;
+    }
+    .design{
+        background-color: hsl(0, 0%, 100%);
+        width: 300px;
+        height: 330px;
+        padding: 20px;
+        margin-top: -20px;
+        border-radius: 10px;
+    }
+    .design-one{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 6em;
+        padding: 20px;
+        width: 375px;
+        height: 530px;
+        margin-top: -75px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    h2{
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .design p{
+        font-size: 0.9em;
+        color: hsl(231, 11%, 63%);
+    }
+    label{
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid hsl(231, 11%, 63%);
+        width: 240px;
+        height: 30px;
+        padding-left: 15x;
+        padding-bottom: 2px;
+        margin-bottom: 10px;
+        font-size: 0.7em;
+    }
+    ::placeholder{
+        font-size: 1.1em;
+    }
+    .plan-button{
+        width: 375px;
+        height: 70px;
+        gap: 15em;
+        background-color: hsl(0, 0%, 100%);
+        margin-left: 0px;
+    }
+    .first-btn{
+        border-radius: 3px;
+        font-size: 0.7em;
+        width: 80px;
+        height: 35px;
+        margin-bottom: 15px;
+        margin-left: -35px;
+    }
+    .design-two{
+        height: 490px;
+        margin-top: -38px;
+    }
+    .design-two-monthly{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 20px;
+        width: 375px;
+        height: 490px;
+        margin-top: -60px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .design-two-monthly p{
+        font-size: 0.9em;
+        padding-right: 0px;
+    }
+    .select-plans{
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 0px;
+    }
+    .monthly-plan{
+        display: flex;
+        flex-direction: row;
+        gap: 0.8em;
+        width: 250px;
+        height: 60px;
+        padding-top: 15px;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    .plan img{
+        width: 33px;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-size: 0.8em;
+        margin-bottom: 2px;
+        margin-top: 0px;
+    }
+    .plan-details p{
+        font-size: 0.7em;
+    }
+    .plan-duration{
+        width: 250px;
+        height: 40px;
+        margin-top: 30px;
+    }
+    .plan-duration p{
+        font-size: 0.7em;
+    }
+    .toggle-bar{
+        width: 27px;
+        height: 15px;
+    }
+    .toggle-bar-inner{
+        width: 8.7px;
+        height: 8.7px;
+        top: 3px;
+        left: 3px;
+    }
+    .plan-buttons{
+        width: 375px;
+        height: 70px;
+        gap: 10.5em;
+        background-color: hsl(0, 0%, 100%);
+        margin-left: 0px;
+    }
+    .other-btn{
+        font-size: 0.7em;
+        font-weight: 500;
+        height: 35px;
+        margin-left: 35px;
+        margin-bottom: 12px;
+    }
+    .btn{
+        border-radius: 3px;
+        font-size: 0.7em;
+        width: 80px;
+        height: 35px;
+        margin-bottom: 12px;
+    }
+    .design-two-yearly{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 20px;
+        width: 375px;
+        height: 560px;
+        margin-top: -77px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .design-yearly{
+        background-color: hsl(0, 0%, 100%);
+        width: 300px;
+        height: 480px;
+        padding: 20px;
+        margin-top: -20px;
+        border-radius: 10px;
+    }
+    .design-yearly p{
+        font-size: 0.9em;
+        color: hsl(231, 11%, 63%);
+    }
+    .yearly-plan{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        width: 250px;
+        height: 80px;
+        padding-top: 15px;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    .select-plans-two-yearly{
+        gap: 0.5em;
+    }
+    .yearly-plan img{
+        margin-bottom: 35px;
+    }
+    .yearly-plan p{
+        margin-bottom: 1px;
+        font-size: 0.7em;
+    }
+    .freebie p{
+        font-size: 0.6em;
+        font-weight: 500;
+        color: hsl(213, 96%, 18%);
+    }
+    .plan-duration-yearly{
+        margin-top: 20px;
+        width: 250px;
+        margin-left: 5px;
+    }
+    .plan-duration-yearly p{
+        font-size: 0.7em;
+    }
+    .plan-duration-yearly .monthly{
+        color: hsl(213, 96%, 18%);
+    }
+    .design-three-monthly{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 20px;
+        width: 375px;
+        height: 570px;
+        margin-top: -60px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .design-three{
+        height: 320px;
+        margin-top: -117px;
+        margin-bottom: 80px;
+    }
+    .addon-options{
+        margin-top: 17px;
+    }
+    .addon{
+        width: 250px;
+        height: 50px;
+        gap: 1em;
+    }
+    .checkmark{
+        width: 15px;
+        height: 15px;
+        margin: 3px 1px 0px 3px;
+    }
+    .check-container input[type="checkbox"]:checked + .checkmark:after{
+        left: 5.5px;
+        top: 2.5px;
+        width: 3px;
+    }
+    .addontext-time{
+        gap: 1em;
+    }
+    h4{
+        font-size: 1em;
+    }
+    .addon-text{
+        font-size: 0.7em;
+    }
+    .online-service{
+        margin-left: 5px;
+    }
+    .addon-time p{
+        margin-bottom: 0px;
+        font-size: 0.65em;
+        margin-top: 10px;
+        color: hsl(243, 100%, 50%);
+    }
+    .design-three-yearly{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 20px;
+        width: 375px;
+        height: 490px;
+        margin-top: -20px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .addon-options-yearly{
+        margin-top: 10px;
+    }
+    .design-four-monthly{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 20px;
+        width: 375px;
+        height: 450px;
+        margin-top: -85px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .arcade-cost{
+        width: 260px;
+        height: 125px;
+        border-radius: 7px;
+    }
+    .total-cost{
+        gap: 4.5em;
+    }
+    .arcade-option{
+        height: 40px;
+    }
+    h5{
+        font-size: 0.75em;
+        margin-bottom: 0px;
+    }
+    a{
+        font-size: 0.7em;
+    }
+    .total-cost p{
+        margin-bottom: 10px;
+        font-size: 0.7em;
+    }
+    .cost-digit{
+        margin-left: 15px;
+        font-size: 7em;
+    }
+    .cost-digit-a p{
+        margin-left: 22px;
+        font-weight: 700;
+        color: hsl(213, 96%, 18%);
+    }
+    .cost-digit-b p{
+        margin-left: 20px;
+        color: hsl(213, 96%, 18%);
+    }
+    .cost-digit-b p{
+        margin-left: 20px;
+        color: hsl(213, 96%, 18%);
+    }
+    .cost-digit-c p{
+        margin-left: 20px;
+        color: hsl(213, 96%, 18%);
+    }
+    .last-total-cost{
+        padding: 10px 0px;
+        margin-top: 20px;
+        margin-bottom: -25px;
+        margin-left: 15px;
+    }
+    .cost-digit-d p{
+        font-size: 0.8em;
+        font-weight: 700;
+        color: hsl(243, 100%, 62%);
+        margin-left: 12px;
+    }
+    .finish-btn{
+        border-radius: 3px;
+        margin-bottom: 15px;
+    }
+    .design-four-yearly{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 20px;
+        width: 465px;
+        height: 450px;
+        margin-top: -78px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .design-four{
+        height: 320px;
+        margin-bottom: 50px;
+    }
+    .total-cost-yr{
+        gap: 5.2em;
+    }
+    .cost-digit-yr{
+        margin-left: 28px;
+    }
+    .cost-digit-yr p{
+        color: hsl(213, 96%, 18%);
+    } 
+    .thankyou-design{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3em;
+        padding: 20px;
+        width: 280px;
+        height: 350px;
+        margin-top: -78px;
+        border-radius: 10px;
+    }
+    .thankyou-design img{
+        width: 55px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .thankyou-design h2{
+        margin-right: 0px;
+    }
+    .thankyou-design p{
+        font-size: 0.8em;
+        margin-top: -5px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .attribution { 
+     margin-top: 50px;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+    
+    
+}
